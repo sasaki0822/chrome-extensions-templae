@@ -1,0 +1,6 @@
+/**
+ * スクリプトのリセット
+ */
+(function() {
+    location.reload();
+})();
