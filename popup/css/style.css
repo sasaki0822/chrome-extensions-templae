@@ -1,0 +1,67 @@
+/*
+--------------------------------------------------------------------
+menu-list
+--------------------------------------------------------------------*/
+.menu-list {
+    margin: 8px 5px;
+}
+
+/* スクリプト実行中は"stop"メニューのみ表示する */
+.menu-list.running .menu {
+    display: none;
+}
+
+.menu-list.running .menu.menu-stop {
+    display: block;
+}
+
+/*
+--------------------------------------------------------------------
+menu
+--------------------------------------------------------------------*/
+.menu {
+    display: block;
+    min-width: 150px;
+    white-space: nowrap;
+    line-height: 2;
+    font-size: .75em;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.menu.menu-stop {
+    display: none;
+}
+
+.menu:hover {
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #fff),  color-stop(0.4, hsl(215, 67%, 97%)),
+        color-stop(0.41, hsl(213, 48%, 95%))
+    );
+    border: solid 1px #c5cdd3;
+}
+
+/*
+--------------------------------------------------------------------
+menu-icon
+--------------------------------------------------------------------*/
+.menu:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    margin: 0 5px 2px;
+}
+
+.menu.menu-stop:before {
+    background-image: url("../images/icon_stop.png");
+}
+
+.menu.menu-play:before {
+    background-image: url("../images/icon_play.png");
+}
