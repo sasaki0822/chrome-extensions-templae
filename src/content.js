@@ -5,7 +5,7 @@ var chromeExTemp = {
      */
     setIcon: function(isStop) {
         chrome.browserAction.setIcon({
-            path: '../icon/icon-128' + (isStop ? '-off' : '') + '.png'
+            path: '../icon/icon-64' + (isStop ? '-off' : '') + '.png'
         });
     },
 
