@@ -10,7 +10,7 @@
         "persistent": false
     },
     "browser_action": {
-        "default_icon" : "icon/icon-128-off.png",
+        "default_icon" : "icon/icon-64-off.png",
         "default_title": "chome extensions template",
         "default_popup": "popup/popup.html"
     },
@@ -22,6 +22,6 @@
         "https://*/"
     ],
     "icons": {
-        "128": "icon/icon-128-off.png"
+        "128": "icon/icon-64-off.png"
     }
 }
